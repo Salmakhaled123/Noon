@@ -5,7 +5,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.BasePage;
 
 import java.time.Duration;
@@ -16,7 +15,9 @@ public class FilterProductPage extends BasePage {
     private static final Logger log = LogManager.getLogger(FilterProductPage.class);
     private final By samsungBrand = By.xpath
             ("//a[contains(@href,'/egypt-en/samsung/')]");
-    private final By priceExpansionTile = By.xpath("//div[@data-qa='Price']");
+    private final By priceExpansionTile = By.xpath("//div[@data-qa='Price']//h3[text()='Price']");
+    private final By brandExpansionTile = By.xpath("//div[@data-qa='Brand']//h3[text()='Brand']");
+
     private final By minInputPriceField = By.xpath("//input[@data-qa='filter-min-input']");
     private final By maxInputPriceField = By.xpath("//input[@data-qa='filter-max-input']");
     private final By applyPriceFilter = By.xpath("//button[@type='submit']");
@@ -65,6 +66,11 @@ public class FilterProductPage extends BasePage {
     public WebElement getProductRating() {
 
         return findElement(productRatingSection);
+    }
+
+    public WebElement getBrandExpansionTile() {
+
+        return findElement(brandExpansionTile);
     }
 
     public WebElement getSliderLocator() {
@@ -160,6 +166,8 @@ public class FilterProductPage extends BasePage {
     }
 
     public void enterMinAndMaxPrice(String minPrice, String maxPrice) {
+        Actions actions = new Actions(driver);
+        actions.scrollToElement(getMinInputPriceField()).perform();
         getMinInputPriceField().click();
         getMinInputPriceField().clear();
         getMinInputPriceField().sendKeys(minPrice);
@@ -190,10 +198,9 @@ public class FilterProductPage extends BasePage {
     }
 
     public void clickOnPriceExpansionTile() {
+        getBrandExpansionTile().click();
         getPriceExpansionTile().click();
-
-}
-
+    }
 
     public void clickOnApplyPriceFilter() {
         WebElement oldFirstProduct = findElement(productBoxInsideProductsList);
@@ -204,6 +211,7 @@ public class FilterProductPage extends BasePage {
     }
 
     public void clickOnProductRatingTile() {
+       getBrandExpansionTile().click();
         getProductRating().click();
     }
 
