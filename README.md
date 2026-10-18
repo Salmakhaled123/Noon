@@ -59,9 +59,8 @@ noon-automation/
 ## Design Highlights
 
 - **Page Object Model (POM)** to keep locators and page actions separate from the test logic.
-- **Data-driven testing** using JSON (min,max price and invalid search keyword) and CSV (noon products).
+- **Data-driven testing** using JSON (min,max price and invalid search keyword) and CSV (noon products) and properties file.
 - **Soft assertions** so a single run reports every failing product, not just the first.
-- **Centralized configuration** for URLs and settings.
 - **Logging** with Log4j2 and **rich reporting** with Allure.
 
 ---
