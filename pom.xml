@@ -12,8 +12,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <seleniumVersion>4.48.0</seleniumVersion>
         <gsonVersion>2.14.0</gsonVersion>
-        <poiVersion>5.5.1</poiVersion>
-        <poi-ooxmlVersion>5.5.1</poi-ooxmlVersion>
         <log4j-coreVersion>2.26.1</log4j-coreVersion>
         <log4j-apiVersion>2.26.1</log4j-apiVersion>
         <allureTestngVersion>2.35.5</allureTestngVersion>
@@ -30,16 +28,6 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>${gsonVersion}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>${poiVersion}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>${poi-ooxmlVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
