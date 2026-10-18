@@ -84,11 +84,6 @@ The rating slider is a custom component that does not respond well to normal `se
 ### 3. Scrolling to a specific brand
 The brand list lives in a scrollable sidebar, so the brand checkbox is often not visible. The fix was to scroll the element into view with JavaScript (`scrollIntoView`) before clicking.
 
-### 4. "Something went wrong" page and bot detection
-The site sometimes detects the automated browser and displays an error page. Mitigations:
-- Disabling Chrome automation flags (`AutomationControlled`, `enable-automation`)
-- Retrying with a page refresh when the error page appears
-- Using JavaScript clicks when the normal click is intercepted
 
 ### 5. Dynamic content and flaky elements
 Filters reload the product grid asynchronously, which causes stale elements. Explicit waits and re-locating elements after each filter action solved most of this.
@@ -117,8 +112,8 @@ allure --version
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
-cd noon-automation
+git clone <https://github.com/Salmakhaled123/Noon>
+cd noon
 ```
 ### 2. Run the whole project
 
