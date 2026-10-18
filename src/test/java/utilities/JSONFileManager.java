@@ -1,7 +1,6 @@
 package utilities;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonElement;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.json.TypeToken;
@@ -9,8 +8,6 @@ import org.openqa.selenium.json.TypeToken;
 import java.io.FileReader;
 import java.lang.reflect.Type;
 import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class JSONFileManager {
     private final Logger log = LogManager.getLogger(JSONFileManager.class);
