@@ -67,7 +67,7 @@ noon-automation/
 - **Data-driven testing** using JSON (price range,invalid search keyword) and CSV (noon products) and properties file for small data like (url, browser name ).
 - **Soft assertions** so a single run reports every failing product, not just the first.
 - **Logging** with Log4j2 and **rich reporting** with Allure.
-- 
+  
 ## Challenges and Solutions
 
 This project had a number of real-world automation challenges, mostly around the price and rating filter widgets.
@@ -106,9 +106,6 @@ java -version
 mvn -version
 allure --version
 ```
-
----
-
 ## How to Run By CMD(Command Line)
 
 ### 1. Clone the repository
@@ -145,6 +142,3 @@ allure open allure-report
 - Because the target site is live, product availability, prices, and page behavior can change and may affect results.
 - This project is for learning and practice purposes only.
 
----
-
-[LinkedIn](#) · [GitHub](#)
