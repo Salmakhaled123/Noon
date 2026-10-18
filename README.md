@@ -34,9 +34,7 @@ https://github.com/user-attachments/assets/8f65eb5c-79f6-4e2a-a6c0-c1ca3a7fa8b0
 | Selenium | 4.48.0 | Browser automation |
 | TestNG | 7.12.0 | Test framework, assertions, and data providers |
 | Gson | 2.14.0 | Reading JSON test data and config |
-| Apache POI | 5.5.1 | Excel file handling |
-| Apache POI OOXML | 5.5.1 | `.xlsx` support |
-| OpenCSV | 5.12.0 | Reading CSV test data (e.g. invalid search keywords) |
+| OpenCSV | 5.12.0 | Reading CSV test data (e.g. search for  noon products) |
 | Log4j2 (core + api) | 2.26.1 | Logging |
 | Allure TestNG | 2.35.5 | Test reporting |
 
