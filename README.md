@@ -133,6 +133,8 @@ Then open it in your browser:
 ```bash
 allure open allure-report
 ```
+<img width="1176" height="830" alt="image" src="https://github.com/user-attachments/assets/fcc30314-8095-490e-9642-9650c17a0946" />
+
 
 ## Notes
 
