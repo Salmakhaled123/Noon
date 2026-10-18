@@ -1,8 +1,8 @@
 package pages.filterProducts;
 
 public class ProductInfo {
-    private  double price;
-    private  double rate;
+    private  final double price;
+    private final  double rate;
     public ProductInfo(double price, double rate) {
         this.price = price;
         this.rate = rate;
