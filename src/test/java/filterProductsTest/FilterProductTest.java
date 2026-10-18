@@ -45,7 +45,6 @@ public class FilterProductTest extends BaseTest {
 
 
     }
-
     @Test
     public void filterProductBasedOnPrice() {
         FilterProductPage filterProductsPage = new FilterProductPage(driver);
@@ -82,5 +81,8 @@ public class FilterProductTest extends BaseTest {
 
         softAssert.assertAll();
     }
+
+
+
 
 }
