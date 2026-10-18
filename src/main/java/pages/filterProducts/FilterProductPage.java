@@ -33,10 +33,7 @@ public class FilterProductPage extends BasePage {
         super(driver);
     }
 
-    public WebElement getSamsungBrand() {
 
-        return findElement(samsungBrand);
-    }
 
     public WebElement getPriceExpansionTile() {
 
